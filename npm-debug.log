@@ -1,0 +1,284 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i' ]
+2 info using npm@3.3.12
+3 info using node@v5.1.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData wiredep
+20 silly mapToRegistry name wiredep
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/wiredep
+24 silly fetchNamedPackageData version
+25 silly mapToRegistry name version
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/version
+29 silly fetchNamedPackageData name
+30 silly mapToRegistry name name
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/name
+34 verbose request uri https://registry.npmjs.org/name
+35 verbose request no auth needed
+36 info attempt registry request try #1 at 00:53:54
+37 verbose request id 617034c636cad926
+38 http request GET https://registry.npmjs.org/name
+39 verbose request uri https://registry.npmjs.org/version
+40 verbose request no auth needed
+41 info attempt registry request try #1 at 00:53:55
+42 http request GET https://registry.npmjs.org/version
+43 verbose request uri https://registry.npmjs.org/wiredep
+44 verbose request no auth needed
+45 info attempt registry request try #1 at 00:53:55
+46 verbose etag "1TB1BGJHX4EKQ6GW9Q12VJN66"
+47 http request GET https://registry.npmjs.org/wiredep
+48 http 200 https://registry.npmjs.org/wiredep
+49 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+49 verbose headers   etag: '"380B8ZRBQXPIHN4O3BOIVRLTS"',
+49 verbose headers   'content-type': 'application/json',
+49 verbose headers   'cache-control': 'max-age=300',
+49 verbose headers   'content-length': '80522',
+49 verbose headers   'accept-ranges': 'bytes',
+49 verbose headers   date: 'Fri, 25 Dec 2015 20:54:01 GMT',
+49 verbose headers   via: '1.1 varnish',
+49 verbose headers   age: '157',
+49 verbose headers   connection: 'keep-alive',
+49 verbose headers   'x-served-by': 'cache-ams4138-AMS',
+49 verbose headers   'x-cache': 'HIT',
+49 verbose headers   'x-cache-hits': '1',
+49 verbose headers   'x-timer': 'S1451076841.166014,VS0,VE0',
+49 verbose headers   vary: 'Accept' }
+50 silly get cb [ 200,
+50 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+50 silly get     etag: '"380B8ZRBQXPIHN4O3BOIVRLTS"',
+50 silly get     'content-type': 'application/json',
+50 silly get     'cache-control': 'max-age=300',
+50 silly get     'content-length': '80522',
+50 silly get     'accept-ranges': 'bytes',
+50 silly get     date: 'Fri, 25 Dec 2015 20:54:01 GMT',
+50 silly get     via: '1.1 varnish',
+50 silly get     age: '157',
+50 silly get     connection: 'keep-alive',
+50 silly get     'x-served-by': 'cache-ams4138-AMS',
+50 silly get     'x-cache': 'HIT',
+50 silly get     'x-cache-hits': '1',
+50 silly get     'x-timer': 'S1451076841.166014,VS0,VE0',
+50 silly get     vary: 'Accept' } ]
+51 verbose get saving wiredep to C:\Users\Администратор\AppData\Roaming\npm-cache\registry.npmjs.org\wiredep\.cache.json
+52 silly resolveWithNewModule wiredep@3.0.0 checking installable status
+53 silly cache add args [ 'wiredep@^3.0.0', null ]
+54 verbose cache add spec wiredep@^3.0.0
+55 silly cache add parsed spec Result {
+55 silly cache add   raw: 'wiredep@^3.0.0',
+55 silly cache add   scope: null,
+55 silly cache add   name: 'wiredep',
+55 silly cache add   rawSpec: '^3.0.0',
+55 silly cache add   spec: '>=3.0.0 <4.0.0',
+55 silly cache add   type: 'range' }
+56 silly addNamed wiredep@>=3.0.0 <4.0.0
+57 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for wiredep
+58 silly addNameRange { name: 'wiredep', range: '>=3.0.0 <4.0.0', hasData: false }
+59 silly mapToRegistry name wiredep
+60 silly mapToRegistry using default registry
+61 silly mapToRegistry registry https://registry.npmjs.org/
+62 silly mapToRegistry uri https://registry.npmjs.org/wiredep
+63 verbose addNameRange registry:https://registry.npmjs.org/wiredep not in flight; fetching
+64 verbose get https://registry.npmjs.org/wiredep not expired, no request
+65 silly addNameRange number 2 { name: 'wiredep', range: '>=3.0.0 <4.0.0', hasData: true }
+66 silly addNameRange versions [ 'wiredep',
+66 silly addNameRange   [ '0.1.0',
+66 silly addNameRange     '0.1.1',
+66 silly addNameRange     '0.1.2',
+66 silly addNameRange     '0.1.4',
+66 silly addNameRange     '0.1.5',
+66 silly addNameRange     '0.1.6',
+66 silly addNameRange     '0.1.7',
+66 silly addNameRange     '0.1.8',
+66 silly addNameRange     '0.2.0',
+66 silly addNameRange     '0.3.0',
+66 silly addNameRange     '0.3.1',
+66 silly addNameRange     '0.4.0',
+66 silly addNameRange     '0.4.1',
+66 silly addNameRange     '0.4.2',
+66 silly addNameRange     '0.5.0',
+66 silly addNameRange     '0.5.1',
+66 silly addNameRange     '0.5.2',
+66 silly addNameRange     '1.0.0',
+66 silly addNameRange     '1.1.0',
+66 silly addNameRange     '1.1.1',
+66 silly addNameRange     '1.2.0',
+66 silly addNameRange     '1.2.1',
+66 silly addNameRange     '1.2.2',
+66 silly addNameRange     '1.3.0',
+66 silly addNameRange     '1.3.1',
+66 silly addNameRange     '1.3.2',
+66 silly addNameRange     '1.3.3',
+66 silly addNameRange     '1.4.0',
+66 silly addNameRange     '1.4.1',
+66 silly addNameRange     '1.4.2',
+66 silly addNameRange     '1.4.3',
+66 silly addNameRange     '1.4.4',
+66 silly addNameRange     '1.5.0',
+66 silly addNameRange     '1.6.0',
+66 silly addNameRange     '1.6.1',
+66 silly addNameRange     '1.6.2',
+66 silly addNameRange     '1.7.0',
+66 silly addNameRange     '1.7.1',
+66 silly addNameRange     '1.7.2',
+66 silly addNameRange     '1.7.3',
+66 silly addNameRange     '1.8.0',
+66 silly addNameRange     '1.8.1',
+66 silly addNameRange     '1.8.2',
+66 silly addNameRange     '1.8.3',
+66 silly addNameRange     '1.8.4',
+66 silly addNameRange     '1.8.5',
+66 silly addNameRange     '1.8.6',
+66 silly addNameRange     '2.0.0',
+66 silly addNameRange     '2.0.1',
+66 silly addNameRange     '2.1.0',
+66 silly addNameRange     '2.2.0',
+66 silly addNameRange     '2.2.1',
+66 silly addNameRange     '2.2.2',
+66 silly addNameRange     '3.0.0-beta',
+66 silly addNameRange     '3.0.0' ] ]
+67 silly addNamed wiredep@3.0.0
+68 verbose addNamed "3.0.0" is a plain semver version for wiredep
+69 silly cache afterAdd wiredep@3.0.0
+70 verbose afterAdd C:\Users\Администратор\AppData\Roaming\npm-cache\wiredep\3.0.0\package\package.json not in flight; writing
+71 verbose afterAdd C:\Users\Администратор\AppData\Roaming\npm-cache\wiredep\3.0.0\package\package.json written
+72 http 200 https://registry.npmjs.org/version
+73 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+73 verbose headers   etag: '"CUUV0KSIY4XKTX0HGBMLEB7T2"',
+73 verbose headers   'content-type': 'application/json',
+73 verbose headers   'cache-control': 'max-age=300',
+73 verbose headers   'content-length': '8831',
+73 verbose headers   'accept-ranges': 'bytes',
+73 verbose headers   date: 'Fri, 25 Dec 2015 20:54:02 GMT',
+73 verbose headers   via: '1.1 varnish',
+73 verbose headers   age: '0',
+73 verbose headers   connection: 'keep-alive',
+73 verbose headers   'x-served-by': 'cache-fra1240-FRA',
+73 verbose headers   'x-cache': 'MISS',
+73 verbose headers   'x-cache-hits': '0',
+73 verbose headers   'x-timer': 'S1451076841.146886,VS0,VE888',
+73 verbose headers   vary: 'Accept' }
+74 silly get cb [ 200,
+74 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+74 silly get     etag: '"CUUV0KSIY4XKTX0HGBMLEB7T2"',
+74 silly get     'content-type': 'application/json',
+74 silly get     'cache-control': 'max-age=300',
+74 silly get     'content-length': '8831',
+74 silly get     'accept-ranges': 'bytes',
+74 silly get     date: 'Fri, 25 Dec 2015 20:54:02 GMT',
+74 silly get     via: '1.1 varnish',
+74 silly get     age: '0',
+74 silly get     connection: 'keep-alive',
+74 silly get     'x-served-by': 'cache-fra1240-FRA',
+74 silly get     'x-cache': 'MISS',
+74 silly get     'x-cache-hits': '0',
+74 silly get     'x-timer': 'S1451076841.146886,VS0,VE888',
+74 silly get     vary: 'Accept' } ]
+75 verbose get saving version to C:\Users\Администратор\AppData\Roaming\npm-cache\registry.npmjs.org\version\.cache.json
+76 silly fetchPackageMetaData Error: No compatible version found: version@1.0.0
+76 silly fetchPackageMetaData Valid install targets:
+76 silly fetchPackageMetaData 0.1.2, 0.1.1, 0.1.0, 0.0.4, 0.0.3, 0.0.1
+76 silly fetchPackageMetaData
+76 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:156:16)
+76 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\iferr\index.js:13:50
+76 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\lib\utils\pulse-till-done.js:19:8
+76 silly fetchPackageMetaData     at saved (C:\Program Files\nodejs\node_modules\npm\lib\cache\caching-client.js:168:7)
+76 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:210:7
+76 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+76 silly fetchPackageMetaData  error for version@1.0.0 [Error: No compatible version found: version@1.0.0
+76 silly fetchPackageMetaData Valid install targets:
+76 silly fetchPackageMetaData 0.1.2, 0.1.1, 0.1.0, 0.0.4, 0.0.3, 0.0.1
+76 silly fetchPackageMetaData ]
+77 http 200 https://registry.npmjs.org/name
+78 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+78 verbose headers   etag: '"ZLMXBMKL75MZJ9Y87E4QJ9CB"',
+78 verbose headers   'content-type': 'application/json',
+78 verbose headers   'cache-control': 'max-age=300',
+78 verbose headers   'content-length': '4497',
+78 verbose headers   'accept-ranges': 'bytes',
+78 verbose headers   date: 'Fri, 25 Dec 2015 20:54:02 GMT',
+78 verbose headers   via: '1.1 varnish',
+78 verbose headers   age: '0',
+78 verbose headers   connection: 'keep-alive',
+78 verbose headers   'x-served-by': 'cache-fra1232-FRA',
+78 verbose headers   'x-cache': 'MISS',
+78 verbose headers   'x-cache-hits': '0',
+78 verbose headers   'x-timer': 'S1451076841.150153,VS0,VE956',
+78 verbose headers   vary: 'Accept' }
+79 silly get cb [ 200,
+79 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+79 silly get     etag: '"ZLMXBMKL75MZJ9Y87E4QJ9CB"',
+79 silly get     'content-type': 'application/json',
+79 silly get     'cache-control': 'max-age=300',
+79 silly get     'content-length': '4497',
+79 silly get     'accept-ranges': 'bytes',
+79 silly get     date: 'Fri, 25 Dec 2015 20:54:02 GMT',
+79 silly get     via: '1.1 varnish',
+79 silly get     age: '0',
+79 silly get     connection: 'keep-alive',
+79 silly get     'x-served-by': 'cache-fra1232-FRA',
+79 silly get     'x-cache': 'MISS',
+79 silly get     'x-cache-hits': '0',
+79 silly get     'x-timer': 'S1451076841.150153,VS0,VE956',
+79 silly get     vary: 'Accept' } ]
+80 verbose get saving name to C:\Users\Администратор\AppData\Roaming\npm-cache\registry.npmjs.org\name\.cache.json
+81 silly fetchPackageMetaData Error: No compatible version found: name@loftschool2
+81 silly fetchPackageMetaData Valid install targets:
+81 silly fetchPackageMetaData 0.0.2, 0.0.1
+81 silly fetchPackageMetaData
+81 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:156:16)
+81 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\iferr\index.js:13:50
+81 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\lib\utils\pulse-till-done.js:19:8
+81 silly fetchPackageMetaData     at saved (C:\Program Files\nodejs\node_modules\npm\lib\cache\caching-client.js:168:7)
+81 silly fetchPackageMetaData     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:210:7
+81 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+81 silly fetchPackageMetaData  error for name@loftschool2 [Error: No compatible version found: name@loftschool2
+81 silly fetchPackageMetaData Valid install targets:
+81 silly fetchPackageMetaData 0.0.2, 0.0.1
+81 silly fetchPackageMetaData ]
+82 silly rollbackFailedOptional Starting
+83 silly rollbackFailedOptional Finishing
+84 silly runTopLevelLifecycles Starting
+85 silly runTopLevelLifecycles Finishing
+86 silly install printInstalled
+87 verbose stack Error: No compatible version found: version@1.0.0
+87 verbose stack Valid install targets:
+87 verbose stack 0.1.2, 0.1.1, 0.1.0, 0.0.4, 0.0.3, 0.0.1
+87 verbose stack
+87 verbose stack     at pickVersionFromRegistryDocument (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:156:16)
+87 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\iferr\index.js:13:50
+87 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\utils\pulse-till-done.js:19:8
+87 verbose stack     at saved (C:\Program Files\nodejs\node_modules\npm\lib\cache\caching-client.js:168:7)
+87 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:210:7
+87 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+88 verbose cwd C:\dna\ls2
+89 error Windows_NT 6.1.7601
+90 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i"
+91 error node v5.1.0
+92 error npm  v3.3.12
+93 error No compatible version found: version@1.0.0
+93 error Valid install targets:
+93 error 0.1.2, 0.1.1, 0.1.0, 0.0.4, 0.0.3, 0.0.1
+94 error If you need help, you may report this error at:
+94 error     <https://github.com/npm/npm/issues>
+95 verbose exit [ 1, true ]
