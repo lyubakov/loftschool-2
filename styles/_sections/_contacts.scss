@@ -1,0 +1,83 @@
+.contacts{
+	background-color: #ffffff;
+	border-bottom: 1px solid #ebedef;
+	padding: 23px 0;
+}
+.socials__item{
+	@include inlineblock(middle);
+	margin-left: 12px;
+	
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+.socials__link{
+	display: block;
+	width: 26px;
+	height: 26px;
+	@include border-radius(50%);
+	background: #333333;
+	position: relative;
+}
+
+.socials__item_header{
+	text-indent: 100%;
+	overflow: hidden;
+}
+
+.socials-sprite{
+	display: block;
+}
+
+$socials: fb, vk, tw;
+$socials-map: sprite-map('socials/*.png', $spacing: 70px);
+@each $icon in $socials {
+	.socials__icon_header_#{$icon} {
+		@include get-sprite($socials-map, $icon);
+		@include absolute-center;
+		&:hover{
+			@include get-sprite($socials-map, #{$icon}h);
+		}
+	}
+}
+.socials{
+	float: left;
+}
+.contacts__other{
+	float: right;
+}
+
+.adress{
+	@include inlineblock(middle);
+	margin-right: 65px;
+
+	&:before{
+		content: '';
+		@include get-sprite($misc-sprite, map-pin);
+		@include inlineblock(middle);
+		margin-right: 9px;
+	}
+	
+}
+.phone-number{
+	@include inlineblock(middle);
+
+	&:before{
+		content: '';
+		@include get-sprite($misc-sprite, telephone);
+		@include inlineblock(middle);
+		margin-right: 9px;
+	}
+}
+.phone-number__text{
+	text-decoration: none;
+	color: $black;
+}
+.adress__text, .phone-number__text {
+	@include inlineblock(middle);
+	&:hover{
+		cursor: pointer;
+		text-decoration: underline;
+	}
+}

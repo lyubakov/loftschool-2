@@ -1,0 +1,20 @@
+include mixins
+
+<!DOCTYPE html>
+html(lang="Ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=Edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+
+		title
+			block title
+		link(rel="stylesheet", href="css/main.css")
+	body
+		block content
+	//- script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+		//- script.
+		//- 	window.jQuery || document.write('<script src="/plugins/jquery-1.11.3.min.js"><\/script>');
+	script(src='js/plugins.min.js')
+	script(src='js/main.js')
+

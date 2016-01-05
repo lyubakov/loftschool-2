@@ -1,0 +1,97 @@
+-
+	var shopsLi = [
+		"Во всех магазинах",
+		"В ближайшем ко мне магазине"]
+-
+	var brandsLi = [
+		"Lenovo",
+		"Apple",
+		"Samsung",
+		"Asus",
+		"Motorola"
+		]
+-
+	var colorsLi = [
+		"white",
+		"grey",
+		"black",
+		"blue",
+		"red",
+		"yellow",
+		"orange",
+		"green",
+		"light-blue",
+		"purple",
+		"pink",
+		"brown"
+	]
+-
+	var osLi = [
+		"Android",
+		"iOs",
+		"Windows Mobile",
+		"Symbian",
+		"Custom"
+		]
+- var pricetypes = ["Флагманы", "Бюджетная линейка"]
+aside.accordeon
+	.pricetypes
+		ul.pricetypes__list
+			each item in pricetypes
+				li(class="pricetypes__item" + ((item == "Бюджетная линейка") ? ' ' + ' active' : '' ) )
+					a(href="#").pricetypes__link= item
+	ul.accordeon__list
+		.shops.accordeon__block
+			.accordeon__heading-wrap
+				a(href="#").shops__heading.accordeon__heading Наличие в магазинах
+			ul.shops__item
+				each item in shopsLi
+					li.shops__item-li.accordeon__item-li
+						label.shops__item-label.accordeon__item-label
+							input(type="radio" name="shop-radio").shops__item-input.accordeon__item-input
+							.shops__item-elem.accordeon__item-elem
+							.shops__item-description.accordeon__item-description #{item}
+		form.brands.accordeon__block
+			.accordeon__heading-wrap
+				a(href="#").brands__heading.accordeon__heading Бренды
+			ul.shops__item.item-checkboxes
+				each item in brandsLi
+					li.brands__item-li.accordeon__item-li
+						label.brands__item-label.accordeon__item-label
+							input(name="" type="checkbox").brands__item-input.accordeon__item-input
+							.brands__item-elem.accordeon__item-elem
+							.brands__item-description.accordeon__item-description #{item}
+				.accordeon__reset-wrap
+					a(href="").brands__reset.accordeon__reset Сбросить фильтр
+		.price.accordeon__block
+			.accordeon__heading-wrap
+				a(href="#").price__heading.accordeon__heading Цены
+			.price__content.shops__item
+				.price__slider
+					.price__display
+						.price__left
+							label.price__label от
+							input.price__input.price__input_from(type="text")
+						.price__right
+							label.price__label до
+							input.price__input.price__input_to(type="text")
+					div(class="price__slider-element" data-min="0" data-max="30000")
+		.color.accordeon__block
+			.accordeon__heading-wrap
+				a(href="#").color__heading.accordeon__heading Цвет
+			.shops__item
+				each color in colorsLi
+					li.accordeon__colors-item
+						a(href="#" style="background-color:" + color).accordeon__colors-link #{item}
+		form.os.accordeon__block
+			.accordeon__heading-wrap
+				a(href="#").os__heading.accordeon__heading Операционные системы
+			ul.os__item.item-checkboxes.shops__item
+				each item in osLi
+					li.os__item-li.accordeon__item-li
+						label.os__item-label.accordeon__item-label
+							input(name="" type="checkbox").os__item-input.accordeon__item-input
+							.os__item-elem.accordeon__item-elem
+							.os__item-description.accordeon__item-description #{item}
+				.accordeon__reset-wrap
+					a(href="").brands__reset.accordeon__reset Сбросить фильтр

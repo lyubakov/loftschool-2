@@ -1,0 +1,16 @@
+-
+	var breadLi = [
+		["#","Главная"],
+		["#","Каталог"],
+		["#","Мобильные телефоны"]
+	]
+- var lastItem = breadLi[breadLi.length - 1];  
+- var breadLiSliced = breadLi.slice(0, -1)
+.breadcrumbs
+	.container
+		ul.breadcrumbs__small
+			each item in breadLiSliced
+				li(class="breadcrumbs__item " + ((item[1]=="Каталог") ? 'active' : '' ))
+					a.breadcrumbs__link(href="#{item[0]}") #{item[1]}
+		.breadcumbs__big
+			a.breadcrumbs__link.breadcrumbs__link_heading(href="#") #{lastItem[1]}

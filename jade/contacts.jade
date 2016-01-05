@@ -1,0 +1,22 @@
+-
+		var socialMatrix = [
+		["fb","http:\/\/facebook.com"],
+		["vk", "http:\/\/vk.com"],
+		["tw", "http:\/\/twitter.com"]
+		];
+				
+.contacts
+	.container
+		ul.socials
+			each item in socialMatrix
+				li.socials__item.socials__item_header
+					a(href="#{item[1]}" class="socials__link socials__link_header") #{item[1].split('\/\/').slice(-1)}
+						div(class="socials__icon_header_#{item[0]}")
+		.contacts__other
+			.adress
+				p.adress__text ул. Маяковская 6, офис 17
+			.phone-number
+				a(href="tel:+79211231213").phone-number__text +7 (921) 123-12-13
+
+
+		

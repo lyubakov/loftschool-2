@@ -42,7 +42,31 @@ var filter = require('gulp-filter'),
             '!app/*.html'
           ]).pipe(gulp.dest('dist'));
         });
-
+//Работаем с Jade
+  var jade = require('gulp-jade');
+  var plumber = require('gulp-plumber');
+  var jadePath = 'jade/index.jade';
+    gulp.task('jade', function() {
+        var YOUR_LOCALS = {};
+       gulp.src(jadePath)
+       .pipe(plumber())
+       .pipe(jade({
+          locals: YOUR_LOCALS,
+          pretty: '\t',    
+        }))
+      .pipe(gulp.dest('./app'))
+    });
+// Работаем с Compass
+var compass = require('gulp-compass');
+ 
+gulp.task('compass', function() {
+  gulp.src('styles/main.scss')
+    .pipe(compass({
+      config_file: './config.rb',
+      css: 'app/css',
+      sass: 'styles'
+    }))
+});
 // Загружаем сервер
 gulp.task('server', function () {
     browserSync({
@@ -68,9 +92,11 @@ gulp.task('watch', function () {
   gulp.watch([
     'app/*.html',
     'app/js/**/*.js',
-    'app/css/**/*.css'
+    'app/css/**/*.css',
   ]).on('change', browserSync.reload);
   gulp.watch('bower.json', ['wiredep']);
+  gulp.watch(jadePath, ['jade']);
+  gulp.watch('styles/**/*.scss', ['compass'])
 });
 
 gulp.task('default', ['server', 'watch']);
@@ -97,6 +123,7 @@ gulp.task('default', ['server', 'watch']);
             return gulp.src('dist', { read: false }) 
             .pipe(rimraf());
         });
+
 
 // Сборка и вывод размера содержимого папки dist
 gulp.task('dist', ['useref', 'images', 'fonts', 'extras'], function () {

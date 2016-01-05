@@ -1,0 +1,27 @@
+mixin inline-info
+	//Товары. Вид инлайн + изображения.
+	.item
+		.item__img-block
+			img.item__main-img(src="", alt="")
+			img.item__secondary-img(src="", alt="")
+			img.item__secondary-img(src="", alt="")
+			img.item__secondary-img(src="", alt="")
+			p.item-code Артикул
+		.item__description
+			h2.item__heading
+			p.item__characteristics
+			.item__mark
+				.item__mark__stars
+					img.item__mark__star(src="#", alt="оценка товара")
+					img.item__mark__star(src="#", alt="оценка товара")
+					img.item__mark__star(src="#", alt="оценка товара")
+					img.item__mark__star(src="#", alt="оценка товара")
+					img.item__mark__star(src="#", alt="оценка товара")
+				.item__mark__figure-block
+					p.item__mark__figure-block__figure 4
+		.item__price
+			h2.item__price__figure
+			button.item__to-cart
+			.item__instock
+				.item__instock__circle
+				p.item__instock__p В наличии

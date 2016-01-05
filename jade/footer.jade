@@ -1,0 +1,31 @@
+-
+	var socialMatrix = [
+	["fb","http:\/\/facebook.com"],
+	["vk", "http:\/\/vk.com"],
+	["tw", "http:\/\/twitter.com"]];
+-
+	var tagMatrix = [
+	["Планшеты","#"],
+	["Мобильные телефоны","#"],
+	["Mp3 плееры","#"],
+	["Персональные компьютеры","#"],
+	["Ноутбуки","#"],
+	["Аксессуары","#"],
+	["Бытовая техника","#"]]
+
+footer.footer
+	.footer__top
+		.container
+			.footer__left
+				img(src="img/logos/cooltech-f.png", alt="").logo.logo_footer
+			.footer__right
+				ul.socials.socials_footer
+					each item in socialMatrix
+						li.socials__item.socials__item_footer
+							a(href="#{item[1]}" class="socials__link socials__link_#{item[0]}-d") #{item[1].split('\/\/').slice(-1)}
+				ul.tags
+					each item in tagMatrix
+						li.tags__item
+							a(href="#{item[1]}").tags__link #{item[0]}
+	.footer__bottom
+		p.copyright All rights reserved. 2016. no copy allowed

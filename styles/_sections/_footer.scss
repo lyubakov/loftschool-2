@@ -1,0 +1,85 @@
+.footer{
+	background: url('/img/bg/rectangle-1.jpg') center center;
+	position: relative;
+	height: 222px;
+}
+.footer__top{
+	padding-top: 34px;
+}
+.footer__left{
+	width: 45%;
+	float: left;
+	padding-top: 34px;
+}
+.footer__right{
+	width: 55%;
+	float: left;
+	text-align: right;
+}
+.logo_footer{
+	max-width: 255px;
+}
+
+$socials-dark-map: sprite-map('socials-dark/*.png', $spacing: 70px);
+
+.socials_footer{
+	margin-bottom: 21px;
+	width: 100%;	
+	.socials__link{
+		width: 45px;
+		height: 45px;
+		background: #ffffff;
+		display: block;
+	}
+	.socials__item{
+		margin-left: 26px;
+	}
+	.socials__item_footer{
+		text-indent: 100%;
+		overflow: hidden;
+	}
+	$items: fb, vk, tw;
+	@each $item in $items{
+		.socials__link_#{$item}-d{
+			&:after{
+				@include get-sprite($socials-dark-map, #{$item}-d);
+				content: '';
+				@include absolute-center;
+			}
+			&:hover{
+				&:after{
+					@include get-sprite($socials-dark-map, #{$item}-dh);
+				}
+			}
+		}
+	}
+}
+
+.tags__item{
+	@include inlineblock();
+	margin-left: 33px;
+	margin-bottom: 15px;
+}
+.tags__link{
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+	&:hover{
+		text-decoration: none;
+	}
+}
+.footer__bottom{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;	
+	border-top: 1px solid #494949;
+	text-align: center;
+	font-size: 12px;
+	line-height: 14px;
+}
+.copyright{
+	padding: 8px 0;
+	color: #ffffff;
+}

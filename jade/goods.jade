@@ -1,0 +1,47 @@
+-
+	var itemsLi =[
+	//Название|Тип SIM|Кол-во Sim|Цвет|ОС|3G|LTE|GPS-модуль|Артикул|Цена|Длинное описание|
+		["Samsung GT-I9301I GALAXY S 3","Micro-SIM","1","Белый","Android","Есть","Нет","Есть","189238","11 290","Cмартфон Samsung GT-I9301I GALAXY S 3 Ceramic White, Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц..."],
+		["Samsung GT-I9301I GALAXY S 3","Micro-SIM","1","Белый","Android","Есть","Нет","Есть","189238","11 290","Cмартфон Samsung GT-I9301I GALAXY S 3 Ceramic White, Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц..."]]
+- var itemHeadingLi = ["","Тип SIM","Кол-во Sim","Цвет","ОС","3G","LTE","GPS-модуль","Артикул","Цена",""];
+
+	main.items
+	.items__header
+		.items__select-block
+			p.items__select-p Сортировать по
+			select.items__select
+		.items__view
+			p.items__view-title Вид каталога
+			i.items__view-type
+			i.items__view-type
+			i.items__view-type
+	.item
+		each item in itemsLi
+			.item__img-block
+				img.item__main-img(src="", alt="#{item[0]}")
+				img.item__secondary-img(src="", alt="#{item[0]}")
+				img.item__secondary-img(src="", alt="#{item[0]}")
+				img.item__secondary-img(src="", alt="#{item[0]}")
+				p.item-code Артикул
+			.item__description
+				h2.item__heading #{item[0]}
+				.item__characteristics
+					.item__charastristic-block
+						.item__charasteristic-heading 
+						.item__characteristic #{item}
+				.item__mark
+					.item__mark__stars
+						img.item__mark__star(src="#", alt="оценка товара")
+						img.item__mark__star(src="#", alt="оценка товара")
+						img.item__mark__star(src="#", alt="оценка товара")
+						img.item__mark__star(src="#", alt="оценка товара")
+						img.item__mark__star(src="#", alt="оценка товара")
+					.item__mark__figure-block
+						p.item__mark__figure-block__figure 4
+			.item__price
+				h2.item__price__figure #{item[10]}
+				button.item__to-cart В корзину
+				.item__instock
+					.item__instock__circle
+					p.item__instock__p В наличии
+	.items__footer
