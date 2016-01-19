@@ -1,6 +1,6 @@
-> Инструкции по установке моего приложения
-1. git clone https://github.com/lyubakov/loftschool-1.git site
-2. cd site
-3. bower i
-4. npm i
-5. gulp
+> LoftSchool 2 Installation Guide
+required: ruby;
+	1.gem install compass
+	2.gem install sass-globbing
+	3.npm install
+	4.gulp

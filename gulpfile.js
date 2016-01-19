@@ -80,7 +80,7 @@ gulp.task('server', function () {
 // Загружаем сервер
 gulp.task('server-dist', function () {  
   browserSync({
-    port: 9000,
+    port: 9011,
     server: {
       baseDir: 'dist'
     }
@@ -114,7 +114,7 @@ gulp.task('default', ['server', 'watch']);
       return gulp.src('app/*.html')
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
-        .pipe(gulpif('*.css', minifyCss({compatibility: 'ie8'})))
+        .pipe(gulpif('*.css', minifyCss()))
         .pipe(gulp.dest('dist'));
     });
 

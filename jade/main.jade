@@ -6,15 +6,24 @@ html(lang="Ru")
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible" content="IE=Edge")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
-
+		
 		title
 			block title
+		link( rel="icon" href="img/favicon.ico" type="image/x-icon")
+		//build:css css/main.min.css
+		//bower:css
 		link(rel="stylesheet", href="css/main.css")
+		//endbower
+		//endbuild
 	body
 		block content
 	//- script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
 		//- script.
 		//- 	window.jQuery || document.write('<script src="/plugins/jquery-1.11.3.min.js"><\/script>');
+	//build:js js/main.min.js
+	//bower:js
 	script(src='js/plugins.min.js')
 	script(src='js/main.js')
+	//endbower
+	//endbuild
 

@@ -3106,6 +3106,7 @@ body .ui-tooltip {
 }
 
 .accordeon__heading-wrap {
+  cursor: pointer;
   position: relative;
   padding: 12px 0;
 }
@@ -4343,13 +4344,13 @@ body .ui-tooltip {
 
 .search {
   float: left;
-  margin-right: 50px;
   margin-left: 56px;
 }
 
 .insite-links {
   float: left;
   padding-top: 8px;
+  margin-left: 50px;
 }
 
 .insite-links__a {

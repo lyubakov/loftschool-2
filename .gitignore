@@ -1,4 +1,4 @@
 node_modules
-app/bower
 dist
 app/bower
+.sass-cache

@@ -5,7 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>Главная страница</title>
+		<!--build:css css/main.min.css-->
+		<!--bower:css-->
 		<link rel="stylesheet" href="css/main.css"/>
+		<!--endbower-->
+		<!--endbuild-->
 	</head>
 	<body>
 		<div class="wrapper">
@@ -29,10 +33,10 @@
 			</div>
 			<header class="header">
 				<div class="container"><img src="img/logos/cooltech-h.png" alt="Логотип" class="logo logo-header"/>
-					<div class="search">
+					<form class="search">
 						<input type="search" placeholder="Что будем искать" class="search__text"/>
 						<input type="submit" value="Найти" class="search__submit"/>
-					</div>
+					</form>
 					<ul class="insite-links">
 						<li class="insite-links__link"><a href="#" class="insite-links__a">Карта проезда</a></li>
 						<li class="insite-links__link"><a href="#" class="insite-links__a">История заказов</a></li>
@@ -847,6 +851,10 @@
 			</div>
 		</footer>
 	</body>
+	<!--build:js js/main.min.js-->
+	<!--bower:js-->
 	<script src="js/plugins.min.js"></script>
 	<script src="js/main.js"></script>
+	<!--endbower-->
+	<!--endbuild-->
 </html>
